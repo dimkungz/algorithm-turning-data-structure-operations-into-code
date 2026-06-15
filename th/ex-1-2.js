@@ -11,7 +11,7 @@
 
 // Start coding here
 function sumOddNumber(numbers){
-    return numbers.filter((num) => num%2!==0 && (num%3===0||num%5===0) && num%11!==0).reduce((a,b) => a+b);
+    return numbers.filter((num) => num%2!==0 && (num%3===0||num%5===0) && num%11!==0).reduce((a,b) => a+b,0);
 }
 const numbers1 = [1, 2, 3, 5, 6, 8, 11, 13];
 console.log(sumOddNumber(numbers1)); // 8 จาก [3, 5]
